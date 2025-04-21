@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-👉 [Play Now on Live Server](https://your-live-server-link.com)
+👉 [Play Now on Live Server]([https://your-live-server-link.com](https://nithishchandraanasuri.github.io/Paddle-Clash/))
 
 > 🔁 *Please rotate your device to landscape mode to play the game.*
 
