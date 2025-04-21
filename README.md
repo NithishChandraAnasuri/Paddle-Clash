@@ -1,6 +1,6 @@
 # 🎮 Paddle Clash
 
-**Paddle Clash** is a futuristic black-and-white themed Ping Pong-style game built using **HTML**, **CSS**, and **JavaScript**, with smooth visual effects powered by **GSAP** and **Anime.js**. The game is responsive and optimized for **landscape mode**, making it fun and fluid on both desktop and mobile devices.
+**Paddle Clash** is a black-and-white themed Ping Pong-style game built using **HTML**, **CSS**, and **JavaScript**, with smooth visual effects powered by **GSAP** and **Anime.js**. The game is responsive and optimized for **landscape mode**, making it fun and fluid on both desktop and mobile devices.
 
 ---
 
