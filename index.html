@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.jpeg" type="image/x-icon" />
+    <title>Paddle Clash</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="refresh" content="5;url=Home.html" />
+  </head>
+  <body>
+    <div class="title-container">
+      <div class="title glow">Paddle Clash</div>
+      <div class="subtitle">Get Ready for the Ultimate Battle</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script>
+      // GSAP Animation
+      gsap.from(".title", {
+        duration: 2,
+        y: -100,
+        opacity: 0,
+        ease: "power4.out",
+      });
+
+      // Anime.js Animation
+      anime({
+        targets: ".subtitle",
+        opacity: [0, 1],
+        translateY: [50, 0],
+        duration: 1500,
+        easing: "easeOutExpo",
+        delay: 1500,
+      });
+    </script>
+  </body>
+</html>

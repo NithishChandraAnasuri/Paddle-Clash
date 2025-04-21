@@ -1,0 +1,192 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+}
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+}
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
+}
+.subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin-top: 20px;
+}
+
+#container {
+  position: relative;
+}
+#ball {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: fixed;
+  top: 20px;
+  left: 52.5%;
+  border-radius: 50%;
+  opacity: 0; /* Start hidden */
+}
+
+
+#rod1,
+#rod2 {
+  width: 20vw;
+  height: 3%;
+  position: fixed;
+  left: 50%;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+#rod1 {
+  background-color: rgb(255, 255, 255);
+  top: 0px;
+  color: black;
+}
+#rod2 {
+  background-color: black;
+  bottom: 0px;
+}
+
+#gameContainer {
+  display: none; /* Hide the game by default */
+}
+#unsupportedMessage {
+  display: none;
+  text-align: center;
+  font-size: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./assets/pp.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+#scoreBoard {
+  position: fixed;
+  top: 490px;
+ left: 10px;
+  width: 10%;
+  background-color: rgba(255, 255, 255, 0.429);
+  color: rgb(13, 13, 13);
+  font-size: 1.5rem;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+
+
+/* Default: for large screens (780px and up) */
+@media screen and (min-width: 780px) {
+  #rod1, #rod2 {
+    width: 20vw;
+    height: 3%;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  #scoreBoard {
+    font-size: 1.5rem;
+    top: 490px;
+    width: 10%;
+  }
+}
+
+/* Medium devices: 480px to 779px */
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  #rod1, #rod2 {
+    width: 35vw;
+    height: 4%;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  #scoreBoard {
+    font-size: 1.2rem;
+    top: 450px;
+    width: 20%;
+  }
+}
+
+/* Small devices: 380px to 479px */
+@media screen and (min-width: 380px) and (max-width: 479px) {
+  #rod1, #rod2 {
+    width: 45vw;
+    height: 4.5%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  #scoreBoard {
+    font-size: 1rem;
+    top: 420px;
+    width: 25%;
+  }
+}
+
+/* Portrait mode: block the game with a message */
+@media screen and (orientation: portrait) {
+  #gameContainer {
+    display: none !important;
+  }
+
+  #unsupportedMessage {
+    display: block !important;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
+
+/* Landscape mode: show the game */
+@media screen and (orientation: landscape) {
+  #gameContainer {
+    display: block;
+  }
+
+  #unsupportedMessage {
+    display: none;
+  }
+}
